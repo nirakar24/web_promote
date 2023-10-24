@@ -6,14 +6,25 @@
 }
 
 html, body{
+    scroll-behavior: smooth;
     width: 100%;
     height: 100%;
     
 }
 
+h2{
+    color: #8E8E8E;
+}
+
+p{
+    font-size: 0.9vw;
+    color: #2196F3;
+}
+
 #main{
     width: 100%;
-    background: linear-gradient(rgb(94, 116, 130),rgb(46, 75, 92));
+    background: linear-gradient(#121212 ,#1A1A1A);
+    color: #EFEFEF;
 }
 
 #nav{
@@ -26,32 +37,42 @@ html, body{
 
 #nleft{
     display: flex;
-    gap: 20px;
+    gap: 2vw;
     border-radius: 2vw;
     padding: 1vw 5vw;
-    border: solid 1px black;
+    /* border: solid 1px black; */
 }
 
 #nav a{
-    font-weight: 600;
-    font-size: 12px;
-    color: black;
+    font-weight: 500;
+    font-size: 0.8vw;
+    color: #EFEFEF;
     text-decoration: none;
 }
 
 button{
-    border: solid 1px black;
-    padding: 20px 20px;
+    border: solid 1px #EFEFEF;
+    border-radius: 20vw;
+    background: transparent;
+    color: #EFEFEF;
+    padding: 1.5vw 1.5vw;
+}
+
+button:hover{
+    border: solid 1px #121212;
+    color: #121212;
+    background: #FFD700;
+    transition: 0.7s;
 }
 
 #intro{
     display: flex;
-    gap: 25px;
+    gap: 1.7px;
     justify-content: space-between;
     align-items: center;
     width: 100%;
     /* height: 100px; */
-    margin-top: 7vw;
+    margin-top: 9vw;
     padding: 0vw 6vw;
     /* background-color: red; */
 }
@@ -59,6 +80,9 @@ button{
 #intro-img{
     width: 67vw;
     height: 17vw;
+    border: none;
+    background: rgba(0, 0, 0, 0); /* Set background to transparent */
+    box-shadow: 0 0 70px rgba(253, 253, 253, 0.2);
     /* background-color: yellow; */
 }
 
@@ -74,13 +98,19 @@ button{
     align-items: center;
     width: 100%;
     padding: 0vw 6vw;
+    z-index: 2;
     /* height: 100px; */
     /* background-color: red; */
-    margin-top: 15vw;
+    margin-top: 20vw;
 }
 
 #intro #heroText{
-    border: solid 3px black;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: left;
+    gap: 1.5vw;
+    /* border: solid 3px black; */
     border-radius: 2vw;
     /* background-color: rgb(98, 223, 223); */
     /* opacity: 0.9; */
@@ -88,7 +118,7 @@ button{
 }
 
 #intro #heroText p{
-    line-height: 3;
+    line-height: 2;
 }
 
 #versatile{
@@ -97,20 +127,25 @@ button{
 
 #versatile p{
     text-transform: capitalize;
-    font-size: 12px;
     margin: 10px 0 ;
 }
 
 #versatile #versimg{
     width: 100%;
     height: 30vw;
-    background-color: red;
+    /* background-color: red; */
 }
 
 #versimg img{
     width: 100%;
     height: 100%;
     object-fit: cover;
+    transition: transform 1s ease-in-out;
+}
+
+#versimg img:hover{
+    transform: scale(1.5);
+    opacity: 0.5;
 }
 
 #diversity{
@@ -119,20 +154,25 @@ button{
 
 #diversity p{
     text-transform: capitalize;
-    font-size: 12px;
-    margin: 10px 0 ;
+    margin: 0.7vw 0 ;
 }
 
 #diversity #diversimg{
     width: 100%;
     height: 30vw;
-    background-color: red;
+    /* background-color: red; */
 }
 
 #diversimg img{
     width: 100%;
     height: 100%;
     object-fit: cover;
+    transition: transform 1s ease-in-out;
+}
+
+#diversimg img:hover{
+    transform: scale(1.5);
+    opacity: 0.5;
 }
 
 #passion{
@@ -141,20 +181,25 @@ button{
 
 #passion p{
     text-transform: capitalize;
-    font-size: 12px;
-    margin: 10px 0 ;
+    margin: 0.5vw 0 ;
 }
 
 #passion #passimg{
     width: 100%;
     height: 30vw;
-    background-color: red;
+    /* background-color: red; */
 }
 
 #passimg img{
     width: 100%;
     height: 100%;
     object-fit: cover;
+    transition: transform 1s ease-in-out;
+}
+
+#passion img:hover{
+    transform: scale(1.5);
+    opacity: 0.5;
 }
 
 #services{
@@ -174,15 +219,28 @@ button{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    /* width: 150vw; */
 }
+
+#service1 #ser1img{
+    width: 100%;
+    height: 40vw;
+}
+
+#service1 #ser1img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+
 #service1 p{
     line-height: 1.5;
-    padding: 10px 0px;
-    font-size: 16px;
+    padding: 0.7vw 0;
 }
 #service1 li{
-    padding: 7px 0px;
-    font-size: 14px;
+    padding: 0.5vw 0;
+    font-size: 0.9vw;
     list-style: disc;
     list-style-position: inside;
 }
@@ -193,12 +251,11 @@ button{
 }
 #service2 p{
     line-height: 1.5;
-    padding: 10px 0px;
-    font-size: 16px;
+    padding: 0.7vw 0;
 }
 #service2 li{
-    padding: 7px 0px;
-    font-size: 14px;
+    padding: 0.5vw 0;
+    font-size: 0.9vw;
     list-style: disc;
     list-style-position: inside;
 }
@@ -209,12 +266,11 @@ button{
 }
 #service3 p{
     line-height: 1.5;
-    padding: 10px 0px;
-    font-size: 16px;
+    padding: 0.7vw 0;
 }
 #service3 li{
-    padding: 7px 0px;
-    font-size: 14px;
+    padding: 0.5vw 0;
+    font-size: 0.9vw;
     list-style: disc;
     list-style-position: inside;
 }
@@ -225,12 +281,11 @@ button{
 }
 #service4 p{
     line-height: 1.5;
-    padding: 10px 0px;
-    font-size: 16px;
+    padding: 0.7vw 0;
 }
 #service4 li{
-    padding: 7px 0px;
-    font-size: 14px;
+    padding: 0.5vw 0;
+    font-size: 0.9vw;
     list-style: disc;
     list-style-position: inside;
 }
@@ -238,7 +293,10 @@ button{
 #services #ser1img{
     width: 34vw;
     height: 13vw;
-    background-color: red;
+    border: none;
+    background: rgba(0, 0, 0, 0); /* Set background to transparent */
+    box-shadow: 0 0 40px rgba(253, 253, 253, 0.2);
+    /* background-color: red; */
 
 }
 
@@ -251,7 +309,10 @@ button{
 #services #ser2img{
     width: 39vw;
     height: 13vw;
-    background-color: red;
+    border: none;
+    background: rgba(0, 0, 0, 0); /* Set background to transparent */
+    box-shadow: 0 0 40px rgba(253, 253, 253, 0.2);
+    /* background-color: red; */
 
 }
 
@@ -262,9 +323,13 @@ button{
 }
 
 #services #ser3img{
+    gap:2vw;
     width: 36vw;
     height: 13vw;
-    background-color: red;
+    border: none;
+    background: rgba(0, 0, 0, 0); /* Set background to transparent */
+    box-shadow: 0 0 40px rgba(253, 253, 253, 0.2);
+    /* background-color: red; */
 
 }
 
@@ -277,8 +342,10 @@ button{
 #services #ser4img{
     width: 36vw;
     height: 13vw;
-    background-color: red;
-
+    border: none;
+    background: rgba(0, 0, 0, 0); /* Set background to transparent */
+    box-shadow: 0 0 40px rgba(253, 253, 253, 0.2);
+    /* background-color: red; */
 }
 
 #ser4img img{
@@ -287,9 +354,37 @@ button{
     object-fit: cover;
 }
 
+
 #services #ser2text{
-    margin-left: 50px;
+    margin-left: 3.5vw;
 }
 #services #ser4text{
-    margin-left: 50px;
+    margin-left: 3.5vw;
+}
+
+#CTA{
+    display: flex;
+    flex-direction: column;
+    gap: 10.5vw;
+    /* justify-content: space-between; */
+    align-items: center;
+    width: 100%;
+    height: 40vw;
+    padding: 0vw 6vw;
+    /* height: 100px; */
+    /* background-color: red; */
+    margin-top: 15vw;
+}
+
+
+@media screen and (max-width:740px) {
+    h1{
+        font-size: 3vw;
+    }
+    h2{
+        font-size: 2.5vw;
+    }
+    p{
+        font-size: 2vw;
+    }
 }
