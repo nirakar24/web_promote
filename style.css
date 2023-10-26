@@ -20,7 +20,6 @@ p{
     font-size: 0.9vw;
     color: #2196F3;
 }
-
 #main{
     width: 100%;
     background: linear-gradient(#121212 ,#1A1A1A);
@@ -93,16 +92,21 @@ button:hover{
 }
 
 #quality{
+    position: relative;
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 100%;
+    height: 100vh;
     padding: 0vw 6vw;
     z-index: 2;
+    /* background-image: url("./img/mulberry.jpg"); */
     /* height: 100px; */
     /* background-color: red; */
     margin-top: 20vw;
 }
+
+
 
 #intro #heroText{
     display: flex;
@@ -139,6 +143,7 @@ button:hover{
 #versimg img{
     width: 100%;
     height: 100%;
+    border-radius: 2vw;
     object-fit: cover;
     transition: transform 1s ease-in-out;
 }
@@ -160,12 +165,14 @@ button:hover{
 #diversity #diversimg{
     width: 100%;
     height: 30vw;
+    
     /* background-color: red; */
 }
 
 #diversimg img{
     width: 100%;
     height: 100%;
+    border-radius: 2vw;
     object-fit: cover;
     transition: transform 1s ease-in-out;
 }
@@ -193,6 +200,7 @@ button:hover{
 #passimg img{
     width: 100%;
     height: 100%;
+    border-radius: 2vw;
     object-fit: cover;
     transition: transform 1s ease-in-out;
 }
@@ -213,6 +221,30 @@ button:hover{
     /* height: 100px; */
     /* background-color: red; */
     margin-top: 15vw;
+}
+
+#services #serHead{
+    display: flex;
+    flex-direction: column;
+    gap: 2vw;
+}
+
+#upper{
+    font-size: 3vw;
+    color: #ff8a00;
+    transform: translate(-25%);
+    display: flex;
+    gap: 3vw;
+}
+#upper img{
+    border-radius: 20%;
+    transform: rotate(-10deg);
+    filter: hue-rotate(220deg);
+}
+
+#lower{
+    font-size: 1.5vw;
+    transform: translate((20% ));
 }
 
 #service1{
@@ -376,6 +408,21 @@ button:hover{
     margin-top: 15vw;
 }
 
+.footer{
+    display: flex;
+    height: 30vw;
+    flex-direction: column;
+    gap: 3vw;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(26, 76, 93);
+}
+
+.footer p{
+    font-weight: 500;
+    color: #121212;
+    font-size: 1vw;
+}
 
 @media screen and (max-width:740px) {
     h1{

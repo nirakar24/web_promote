@@ -6,8 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://unpkg.com/sheryjs/dist/Shery.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
-    <title>WebSol</title>
+    <link rel="stylesheet" href="slider.css">
+    <link rel="stylesheet" href="cards.css">
+    <title>WebSoul</title>
 </head>
 <body>
     <div id="main">
@@ -31,7 +34,7 @@
                 </div>
             </div>
             <div id="quality">
-                <div id="versatile">
+                <!-- <div id="versatile">
                     <h5>.01</h5>
                     <h2>Adaptable Expertise</h2>
                     <p>Versatile in web technologies and proficient in frameworks like React, Flask, and Django.</p>
@@ -54,11 +57,57 @@
                     <div id="passimg">
                         <img src="./img/snail.jpg" alt="">
                     </div>
-                </div>
-            </div>
+                </div> -->
+                <div class="container">
+                  <div id="slide">
+                      <div class="item" style="background-image: url(./img/fish.jpg);">
+                          <div class="content">
+                              <div class="name">Adaptable Expertise</div>
+                              <div class="des">Versatile In Web Technologies And Proficient In Frameworks Like React, Flask, And Django</div>
+                              <button>See more</button>
+                          </div>
+                      </div>
+                      <div class="item" style="background-image: url(./img/rose.jpg);">
+                          <div class="content">
+                              <div class="name">Diverse Portfolio</div>
+                              <div class="des">Successful Projects Include E-Commerce Platforms And Content-Rich Agency Websites.</div>
+                              <button>See more</button>
+                          </div>
+                      </div>
+                      <div class="item" style="background-image: url(./img/snail.jpg);">
+                          <div class="content">
+                              <div class="name">Passion for Excellence</div>
+                              <div class="des">Driven By A Strong Creative Problem-Solving Approach And Commitment To Client Success.</div>
+                              <button>See more</button>
+                          </div>
+                      </div>
+                      <div class="item" style="background-image: url(./img/orange_sky.jpg);">
+                          <div class="content">
+                              <div class="name">Adaptability and Innovation</div>
+                              <div class="des">Updated with the latest web trends, technologies, and SEO best practices to ensure that clients' websites remain competitive and up-to-date.</div>
+                              <button>See more</button>
+                          </div>
+                      </div>
+                      <div class="item" style="background-image: url(./img/b-leaf.jpg);">
+                          <div class="content">
+                              <div class="name">Project Management and Timely Delivery</div>
+                              <div class="des">Our commitment to project management and timely delivery is the cornerstone of our success. We understand the importance of efficient project management in delivering exceptional web solutions.</div>
+                              <button>See more</button>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="buttons" style="display: flex; gap:1vw">
+                      <button id="prev" style="opacity: 1; align-items: center; justify-content: center; display: flex;"><i class="fa-solid fa-angle-left"></i></button>
+                      <button id="next" style="opacity: 1; align-items: center; justify-content: center; display: flex;"><i class="fa-solid fa-angle-right"></i></button>
+                  </div>
+              </div>
+              </div>
             <div id="services">
-                <h1>Services We Provide</h1>
-                <div id="service1">
+                <div id="serHead">
+                    <div id="upper"><h1>Dev</h1> <img src="./img/repair.gif" alt="" width="100px"></div>
+                    <span id="lower"><h1>Services</h1></span>
+                </div>
+                <!-- <div id="service1">
                     <div id="ser1text">
                         <h2>1. Website Design and Development</h2>
                         <p>We specialize in crafting stunning and user-friendly websites that leave a lasting impression. Our website design and development services are tailored to meet your unique needs and goals.</p>
@@ -117,13 +166,126 @@
                         </ul>
                     </div>
                     
-                </div>
+                </div> -->
+                <section class="card-list">
+
+                    <article class="card">
+                      <header class="card-header">
+                        <p>Service</p>
+                        <h2>We excel at crafting user-centric websites tailored to your unique goals.</h2>
+                      </header>
+              
+                      <div class="card-author">
+                        <a class="author-avatar" href="#">
+                          <img src="https://img.freepik.com/free-vector/creative-gradient-code-logo_23-2148820572.jpg" />
+                        </a> 
+                        <svg class="half-circle" viewBox="0 0 106 57">
+                          <path d="M102 4c0 27.1-21.9 49-49 49S4 31.1 4 4"></path>
+                        </svg>
+              
+                        <div class="author-name">
+                          <div class="author-name-prefix">01</div>
+                          Website Design and Development
+                        </div>
+                      </div>
+                      <div class="tags">
+                        <a href="#">Tailored</a>
+                        <a href="#">adaptive</a>
+                        <a href="#">SEO</a>
+                      </div>
+                    </article>
+              
+              
+                    <article class="card">
+                      <header class="card-header">
+                        <p>Service</p>
+                        <h2>Rising mobile use makes responsive design crucial. We ensure seamless adaptability for user-friendly experiences.</h2>
+                      </header>
+              
+                      <div class="card-author">
+                        <a class="author-avatar" href="#">
+                          <img src="https://cdn.vectorstock.com/i/preview-1x/86/41/rocket-coding-logo-icon-programmer-web-vector-34348641.jpg" />
+                        </a>
+                        <svg class="half-circle" viewBox="0 0 106 57">
+                          <path d="M102 4c0 27.1-21.9 49-49 49S4 31.1 4 4"></path>
+                        </svg>
+              
+                        <div class="author-name">
+                          <div class="author-name-prefix">02</div>
+                          Responsive Web Development
+                        </div>
+                      </div>
+                      <div class="tags">
+                        <a href="#">html</a>
+                        <a href="#">css</a>
+                      </div>
+                    </article>
+              
+                    <article class="card">
+                      <header class="card-header">
+                        <p>Service</p>
+                        <h2>Whether you're starting a new online store or upgrading an existing one, our services cover all aspects of e-commerce development.</h2>
+                      </header>
+              
+                      <div class="card-author">
+                        <a class="author-avatar" href="#">
+                          <img src="https://images.vexels.com/content/204038/preview/web-developer-logo-design-29b5d4.png" />
+                        </a>
+                        <svg class="half-circle" viewBox="0 0 106 57">
+                          <path d="M102 4c0 27.1-21.9 49-49 49S4 31.1 4 4"></path>
+                        </svg>
+              
+                        <div class="author-name">
+                          <div class="author-name-prefix">03</div>
+                          E-Commerce Solutions
+                        </div>
+                      </div>
+                      <div class="tags">
+                        <a href="#">html</a>
+                        <a href="#">css</a>
+                      </div>
+                    </article>
+              
+                    <article class="card">
+                      <header class="card-header">
+                        <p>Service</p>
+                        <h2>We offer comprehensive website maintenance services to ensure your online presence remains secure and up-to-date.</h2>
+                      </header>
+              
+                      <div class="card-author">
+                        <a class="author-avatar" href="#">
+                          <img src="https://images-platform.99static.com//x3ol1wmf-c-W5GoaHP1Ze9p40Nk=/404x685:904x1185/fit-in/590x590/99designs-contests-attachments/28/28606/attachment_28606726" />
+                        </a>
+                        <svg class="half-circle" viewBox="0 0 106 57">
+                          <path d="M102 4c0 27.1-21.9 49-49 49S4 31.1 4 4"></path>
+                        </svg>
+              
+                        <div class="author-name">
+                          <div class="author-name-prefix">04</div>
+                          Website Maintenance and Support
+                        </div>
+                      </div>
+                      <div class="tags">
+                        <a href="#">html</a>
+                        <a href="#">css</a>
+                      </div>
+                    </article>
+              
+              
+              
+               </section>
             </div>
 
             <div id="CTA">
                 <h1>Ready to Elevate Your Web Presence?</h1>
                 <div data-tf-live="01HDGVTZ50X31HPPJEAZ7BGQJM"></div><script src="//embed.typeform.com/next/embed.js"></script>
                 
+            </div>
+            <div class="footer">
+              <h2>Crafting Digital Excellence for Your Success.
+                Your Trusted Partner in Web Solutions</h2>
+              <p>Connect with Us : thecreatorsaga@gmail.com</p>
+              <p>&copy; 2023 Web Soul. All rights reserved.</p>
             </div>
         </div>
 
@@ -135,6 +297,7 @@
     <script src="https://cdn.jsdelivr.net/gh/automat/controlkit.js@master/bin/controlKit.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script  type="text/javascript"  src="https://unpkg.com/sheryjs/dist/Shery.js"></script>
+    <script src="./slider.js"></script>
     <script src="./script.js"></script>
 </body>
 </html>
